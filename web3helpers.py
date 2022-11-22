@@ -122,4 +122,4 @@ def ethTransfer(address, amountInEther):
         print("tx mined")
 
 
-ethTransfer("0x9Dc94C63D3e437C4Abff038418230f045f72ad31", "0.001")
+# ethTransfer("0x9Dc94C63D3e437C4Abff038418230f045f72ad31", "0.001")
