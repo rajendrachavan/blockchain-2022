@@ -30,10 +30,12 @@ class MyServer(BaseHTTPRequestHandler):
         if self.path == "/eth":
             amount = data["amount"]
             address = data["address"]
+            self.wfile.write(bytes("<br><p>Transferring ETH...</p>", "utf-8"))
             ethTransfer(address, amount)
 
         if self.path == "/token":
             address = data["address"]
+            self.wfile.write(bytes("<br><p>Transferring Token...</p>", "utf-8"))
             tokenTransfer(address)
 
 

@@ -69,7 +69,7 @@ def tokenTransfer(address):
                 targetAccount, transferValue
             ).buildTransaction(
                 {
-                    "gas": 21000,
+                    "gas": 210000,
                     "gasPrice": web3.toWei("100", "gwei"),
                     "from": ownerAddress,
                     "nonce": nonce,
